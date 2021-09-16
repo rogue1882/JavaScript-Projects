@@ -12,3 +12,18 @@ function math  //Addition function
             var Subtraction = 5-2;
                 document.getElementById("math").innerHTML ="5-2 =" + Subtraction;
                  } 
+function multiplication() { // class multiplication format
+    var simple_math = 6*8;
+    document.getElementById("math").innerHTML = "6 x 8 =" + simple_math;
+}
+
+function division() { //class division format
+    var simple_math = 48/6;
+    document.getElementById("math").innerHTML="48/6 =" + simple_math;
+}
+
+function more_math() { // class multiple operations format
+    var simple_math= (1 + 2) * 10/2 -5;
+    document.getElementById(math").innerHTML = "1 plus2, multiplied by 10,
+    divided in half and the subtracted by 5 equals "+ simple_math;
+}
