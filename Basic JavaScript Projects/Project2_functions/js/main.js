@@ -5,3 +5,7 @@ function myFunction() { //Function using the += operator
 
 }
 
+function tom() {
+    var mutiply= 12*4;  //A function to multiply
+    document.getElementById("demo").innerHTML = "12*4 =" + tom;  // a document.getElementById                  
+}
