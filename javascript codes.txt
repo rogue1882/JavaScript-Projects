@@ -95,3 +95,21 @@ function subtraction_function() { //subtraction function code working code
            
     </body>
 </html>
+
+Dictionary code
+
+<script src="js/main.js"></script>
+<p id="dictionary" onclick="my_Dictionary()">Click me!</p>
+
+in javascript
+
+function my_Dictionary() {
+    var Animal = {
+        Species: "dog",
+        Color:"black",
+        Breed:"Labrador",
+        Age:5,
+        Sound:"Bark!"
+    };
+    document.getElementById("Dictionary").innerHTML = Animal.sound;
+}
