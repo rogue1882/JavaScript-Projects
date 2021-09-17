@@ -37,4 +37,12 @@ function math_sqrt() {
 document.write(sqrt);
 }
    
-             
+function modulus_operator() { //class format 
+    var simple_math =25 % 6;
+    document.getElementById("math").innerHTML = "When you divide 25 by 6 you have a remainder of: "+simple_math;
+} 
+
+function math_random() { // function for math.random
+    document.getElementById("math").innerHTML =
+Math.floor(Math.random() * 101);
+}
