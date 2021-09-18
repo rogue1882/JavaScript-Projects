@@ -1,0 +1,125 @@
+function type() { 
+document.write(typeof "word");
+}
+function number() {
+document.write(typeof 3);
+}
+function coercion() {
+document.write("10" + 5);
+}
+
+<script src="Example.js"></script>
+<p id="Test" onclick="my_Function()">Click here!</p>
+
+function my_Function() {
+    document.getElementById("Test").innerHTML = 0/0;
+    }
+
+
+function not() {
+document.getElementById("Test").innerHTML = inNaN('This is a string');
+}
+
+
+function yes() {
+document.getElementById("Test").innerHTML = inNaN('007');
+}
+
+function myFunction() {
+  var res = "";
+  res = res + isNaN(123) + ": 123<br>";
+  res = res + isNaN(-1.23) + ": -1.23<br>";
+  res = res + isNaN(5-2) + ": 5-2<br>";
+  res = res + isNaN(0) + ": 0<br>";
+  res = res + isNaN('123') + ": '123'<br>";
+  res = res + isNaN('Hello') + ": 'Hello'<br>";
+  res = res + isNaN('2005/12/12') + ": '2005/12/12'<br>";
+  res = res + isNaN('') + ": ''<br>";
+  res = res + isNaN(true) + ": true<br>";
+  res = res + isNaN(undefined) + ": undefined<br>";
+  res = res + isNaN('NaN') + ": 'NaN'<br>";
+  res = res + isNaN(NaN) + ": NaN<br>";
+  res = res + isNaN(0 / 0) + ": 0 / 0<br>";
+  res = res + isNaN(null) + ": null<br>";
+
+  document.getElementById("demo").innerHTML = res;
+}
+
+function infinity() {
+document.getElementById("demo").innerHTML= document.write(2E310);
+
+function infinity() {
+        document.getElementById("demo").innerHTML= 2E310;
+        }
+}
+
+
+document.write(-3E310);
+
+function bool() {
+document.write(10>2);
+}
+
+function lean() {
+document.write(10<2);
+}
+
+
+console.log(2+3);
+console.log(10<2)
+
+function DEtrue() {
+    document.write(10==10);
+}
+
+function DEfalse() {
+    document.write(3==11);
+}
+
+function TEtrue() {
+    X=10;
+    Y=10;
+    document.write(X===Y);
+}
+
+function TEfalse() {
+    X=82;
+    Y="82";
+    document.write(X===Y);
+}
+
+
+function tetrue() {
+    A= "Magnus";
+    B= "Magnus";
+    document.write(A===B);
+}
+
+
+function andtrue() {
+    document.write(5>2 && 10>4);
+}
+
+function andfalse() {
+    document.write(5>10 && 10>4);
+}
+
+
+function ortrue() {
+    document.write(5>10 || 10>4);
+}
+
+
+function orfalse() {
+    document.write(5>10 || 10>20);
+}
+
+<p id="Not" onclick="not_Function()"> Not Operator</p>
+
+function not_Function() {
+    document.getElementById("Not").innerHTML= !(20>10);
+}
+
+function not_Function1() {
+    document.getElementById("Not1").innerHTML =!(5>10);
+}
