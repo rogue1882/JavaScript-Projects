@@ -1,0 +1,88 @@
+<p id="Loop"></p>
+<button onclick="Call_Loop()">Click here to execute the loop</button>
+
+function Call_loop() {
+    var Digit = "";
+    var X =1;
+    while (X< 11) {
+        Digit += "<br>" + X;
+        X++;
+    }
+    document.getElementById("Loop").innerHTML = Digit;
+}
+
+<p id="length"></p>
+<button onclick="ST_length">Click for length</button>
+
+function ST_length() {
+    let str = "How long is this String";
+    document.getElementById("length").innerHTML = str.length;;
+}
+
+var Instruments  =["Guitar", "Drums", "Piano", "Bass", "Violin", "Trumpet", "Flute"];
+var Content = "";
+var Y;
+function for_Loop() {
+    for (Y=0; Y< Instruments.length; Y++) {
+        content =+ Instuments[Y] +  "<br>";
+    }
+    document.getElementById("List_of_Instuments").innerHTML = Content;
+}
+
+<p id="List_of_Instruments"></p>
+<button onclick="for_Loop()">Click H\here.</button>
+
+ function cat_pics() { 
+     var Cat_Picture= [];
+     Cat_Picture [0] = "sleeping";
+     Cat_Picture [1] = "playing";
+     Cat_Picture [2] = "eating";
+     Cat_Picture [3] = "purring";
+     document.getElementById("Cat").innerHTML = "In this picture, the cat is " +
+     Cat_Picture [3] + ".";
+ }
+
+ <p id="Cat"></p>
+ <button onclick="cat_pics()">Click here.</button>
+
+ <p id="Constant"></p>
+ <button onclick="constant_function()">Click Here</button>
+
+ function Let_Var() {
+     var X = 82;
+     document.write(X):
+     {
+         let X = 33;
+         document.write("<br>" + X);
+     }
+     document.write("<br>" + X);
+ }
+
+ function myFunction() {
+  return Math.PI;
+}
+
+document.getElementById("demo").innerHTML = myFunction();
+
+function Return_Pi() {  // Retun function
+    return Math.PI;
+  }
+  
+  document.getElementById("Pi").innerHTML = Return_Pi();
+  
+  <p id="Car_Object"></p>
+
+  function John() {
+    let car= {
+        make: "Dodge ",
+        model: "Viper ",
+        year: "2021 ",
+        colr: "red ",
+        description : Function() {
+            return "The car is a " + this.year + this.coloe + this.make + this.model;
+        }
+    };
+    document.getElementById("Car_Object").innerHTML = car.description();
+}
+
+

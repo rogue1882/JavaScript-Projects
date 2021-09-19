@@ -185,3 +185,25 @@ CSS section
   from {opacity: .4}
   to {opacity: 1}
 }
+
+ASYNC ASSIGNMENT Begins
+<!DOCTYPE html>
+<html>
+    <body>
+    <script src="async.js" async></script>
+    <p id="p1">Hello World</p>
+    </body>
+</html>
+
+alert(document.getElementById("p1").innerHTML);
+
+The defer attribute
+<!DOCTYPE html>
+<html>
+    <body>
+    <script src="defer_1.js" defer></script>
+    <script src="defer_2.js" defer></script>
+    <p id="p1">Hello World</p>
+    </body>
+</html>
+
