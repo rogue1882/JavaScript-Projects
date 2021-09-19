@@ -1,0 +1,71 @@
+<p id="Concatenate"></p> <!--  Concat() Method HTML -->
+<button onclick="full_Sentence()">Click here for a sentence.</button>
+
+function full_Sentence() {  // js Concat function
+    var part_1 = "I have ";
+    var part_2 = "made this ";
+    var part_3 = "into a complete ";
+    var part_4 = "sentence.";
+    var Whole_sentence = part_1.concat(part_2, part_3, part_4);
+    document.getElementById("Concatenate").innerHTML = Whole_sentence;
+}
+
+<p id ="Slice"></p> <!-- HTML Slice Method Element -->
+<button onclick="slice_Method()">Click Here</button>
+
+function slice_Method() {  // js Slice function
+    var Sentence = "All work and no play makes Johnny a dull boy.";
+    var Section = Sentence.slice(27,33);
+    document.getElementById("Slice").innerHTML = Section;
+}
+
+<button onclick="Upper_Case()">toUpperCase function</button>
+<p id="alice"></p>
+
+function Upper_Case() {
+  var str = "Welcome to my Nightmare!";
+  var res = str.toUpperCase();
+  document.getElementById("alice").innerHTML = res;
+}
+
+<p id="demo"></p>
+
+function Search() {
+    let str = "Visit W3Schools!"; 
+document.getElementById("demo").innerHTML = str.search("W3Schools");
+}
+
+<p id="Numbers_to_string"></p>
+<button onclick="string_Method()">Numbers Method</button>
+
+function string_Method() {
+    var X=182;
+    document.getElementById("Numbers_to_string").innerHTML  X.toString();
+}
+
+<p id="Precision"></p>
+<button onclick="precision_Method()">Precision Method</button>
+
+function precision_Method() {
+    var X = 12938.3012987376112;
+    document.getElementById("Precision").innerHTML = X.toPrecision(10);
+}
+
+<p id="new"></p>
+<button onclick="fix()">toFixed() Method</button>
+
+function fix() {
+  var num = 5;
+  var n = num.toFixed(2);
+  document.getElementById("new").innerHTML = n;
+}
+
+<p id="cult"></p>
+<button onclick="Shinedown()">valueof() Method</button>
+
+
+function Shinedown() {
+let str = "I wrote the sound of Madness";
+document.getElementById("cult").innerHTML = str.valueOf();
+}
+
