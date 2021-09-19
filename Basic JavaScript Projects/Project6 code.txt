@@ -1,0 +1,69 @@
+function Ride_Function() { // Ternary function for ride
+    var Height, Can_ride;
+    Height = document.getElementById("Height").value;
+    Can_ride =(Height<52) ? "You are too short" : "You are tall enough";
+    document.getElementById("Ride").innerHTML  = Can_ride + "to ride.";
+}
+
+function Vote_Function() {  // Ternary function for voting
+    var Age, Can_vote;
+    Age = document.getElementById("Age").value;
+    Can_vote =(Age <17) ? "You are to young" : "You are old enough";
+    document.getElementById("Vote").innerHTML  = Can_vote + " to vote.";
+}
+
+<p>Riders must be at least 52 centimeters tall to ride</p>
+<input id="Height" value="52"/>
+<button onclick="Ride_Function()">Click here</button>
+<p id="Ride"></p>
+
+
+
+<p>Registered voters must be at least 18 years old to vote.</p>
+<input id="Age" value="18"/>
+<button onclick="Vote_Function()">Click here</button>
+<p id="Vote"></p>
+
+
+<button onclick="myFunction()">Click here. </button>
+<p id="Keywords_and_constructors"></p>
+
+function Vehicle(Make, Model, Year, Color)   {
+    this.Vehicle_Make=Make;
+    this.Vehicle_Model=Model;
+    this.Vehicle_Year=Year;
+    this.Vehicle_Color=Color;
+}
+var Jack = new Vehicle("Dodge", "Viper", 2020, "Red");
+var Emily = new Vehicle("jeep", "Trail Hawk", 2019, "White and Black");
+var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
+function myFunction() {
+    document.getElementById("Keywords_and_Constrctors").innerHTML =
+    "Erik Drives a " + Erik.Vehicle_color + "-colred" + Erik.vehicle_Model +
+    "manufactured in " + Erik.Vehicle_Year;
+}
+
+const George = new Vehicle("Ford", "Mustang", 1967, "Black");
+
+<button onclick="">Click here</button>
+<p id= "New_and_this"></p>
+
+
+<p id="Counting" onclick="count_Function()">Click here.</p>
+<script src="Example.js"></script>
+
+function count_Function() {
+    document.getElementById("Counting").innerHTML = Count();
+    function Count() {
+        var starting_point = 9;
+        function Plus_one() {Starting_point += 1;}
+        Plus_one();
+        return Starting_point:
+    }
+    }
+
+
+<p id="Nested_Function" onclick=""></p>
+
+
+
