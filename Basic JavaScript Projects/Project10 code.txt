@@ -85,4 +85,30 @@ function Return_Pi() {  // Retun function
     document.getElementById("Car_Object").innerHTML = car.description();
 }
 
+Function Breaktime() {
+    let text = "";
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text += "The number is " + i + "<br>";
+}
 
+document.getElementById("demo").innerHTML = text;
+}
+
+<p id="demo"></p>
+<button onclick="Breaktime()">Loop Break Click Here.</button>
+
+
+
+<p id="toto"></p>
+<button onclick="Con_time()"> loop Continue Click Here</button>
+
+
+function Con_time() {
+let text = "";
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { continue; }
+  text += "The number is " + i + "<br>";
+}
+document.getElementById("toto").innerHTML = text;
+}

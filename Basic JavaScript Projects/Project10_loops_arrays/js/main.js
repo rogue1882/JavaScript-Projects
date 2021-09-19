@@ -50,20 +50,45 @@ function Let_Var() { // Let and Var Function
     document.write("<br>" + X);
 }
 
+
+function Break_time() {  // the break
+    let text = "";
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+}
+
 function test() { // return function
     return Math.PI;
     }
     document.getElementById("Pi").innerHTML= test(); 
 
-
-    let car= {
+function john() {
+    let car= {    // object function
         make: "Dodge ",
         model: "Viper ",
         year: "2021 ",
         colr: "red ",
-        description : Function () {
+        description : function () {
             return "The car is a " + this.year + this.coloe + this.make + this.model;
         }
     };
     document.getElementById("Car_Object").innerHTML = car.description();
+}
+
+
+function Con_time() {  //Continue in the loop
+    let text = "";
+    for (let i = 0; i < 10; i++) {
+      if (i === 3) { continue; }
+      text += "The number is " + i + "<br>";
+    }
+    document.getElementById("toto").innerHTML = text;
+    }
+
+
+
 
