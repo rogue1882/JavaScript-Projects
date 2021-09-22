@@ -1,0 +1,77 @@
+h1>What is your favorite color?</h1>
+        <h3>Pick your favorite color from this list:</h3>
+        <ul>
+            <li>Red</li>
+            <li>Orange</li>
+            <li>Yellow</li>
+            <li>Blue</li>
+            <li>Pink</li>
+            <li>Purple</li>
+        </ul>
+
+        <h3>Enter your choice below:</h3>
+
+        <input id="Color_Input" type="text">
+        <button onclick="Color_Function()">Submit Color</button>
+        <p id-"Output"></p>
+
+function Color_Function() { 
+    var Color_Output;
+    var Colors= document.getElementById("Color_Input").value ;
+    var Color_String = " is a great color!";
+    switch(Colors)  {
+        case "Red":
+            Color_Output= "Red" + Color_String;
+        break;
+        case "Red":
+            Color_Output= "Red" + Color_String;
+        break;
+        case "Blue":
+            Color_Output= "Blue" + Color_String;
+        break;
+        case "Orange":
+            Color_Output= "Orange" + Color_String;
+        break;
+        case "Yellow":
+            Color_Output= "Yellow" + Color_String;
+        break;
+        case "Pink":
+            Color_Output= "Pink" + Color_String;
+        break;
+        case "Purple":
+            Color_Output= "Purple" + Color_String;
+        break;
+        default:
+            Color_Output= "Please enter a color exactly as written on the above list,";
+    }
+    document.getElementById("Output").innerHTML= Color_Output;
+}
+
+ <canvas id="ID_Name" width="500" height="250"></canvas>
+<canvas id="ID_Name" width="500" height="250" style="border:5px solid black;"></canvas>
+
+
+
+var c = document.getElementById("ID_Name");
+var ctx = c.getContext("2d");
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+
+function Grade() {
+var c = document.getElementById("ID_Name");
+            var ctx = c.getContext("2d");
+            // Create gradient
+            var grd = ctx.createLinearGradient(0,0,200,0);
+            grd.addColorStop(0,"red");
+            grd.addColorStop(1,"white");
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10,10,150,80);
+}
