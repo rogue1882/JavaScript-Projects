@@ -127,7 +127,7 @@ function checkWinConditions() {
 
 //This function makes our body element temporarily unclickable.
 function disableClick() { 
-    //This makes out bocy element unclickable.
+    //This makes our body unclickable.
     body.style.pointerEvents = 'none';
     //This makes our body clickable again after 1 second
     setTimeout(function() {body.style.pointerEvents = 'auto';}, 1000);
@@ -149,7 +149,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     //This line gives us access to methods and properties to use on canvas.
     const c = canvas.getContext('2d');
     // This line indicates where the start of a lines x axis is.
-    let xl= coordX1,
+    let x1= coordX1,
         //This line indicates where the start of a lines y axis is.
         y1 = coordY1,
         //This line indicates where the end of a lines x axis is.
@@ -157,18 +157,18 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         //This line indicates where the end of a lines y axis is. 
         y2 = coordY2,
         //This varible stores temporary x axis data we update in our animation loop.
-        x= x1, 
+        x = x1, 
         // This variable stores temporary y axis data we update in our animation loop.
         y = y1;
 
 //This function interacts with the canvas
 function animateLineDrawing() {
     // This varible creates a loop.
-    const animationLoop = requestAnimationFram(animateLineDrawing);
+    const animationLoop = requestAnimationFrame(animateLineDrawing);
     //This method clears content from last loop iteration.
     c.clearRect(0, 0, 608, 608)
     //This method starts a new path.
-    c.breginPath() ;
+    c.beginPath() ;
     //This method moves us to a starting point for our line.
     c.moveTo(x1, y1)
     // This method indicates the end point in our line.
@@ -213,7 +213,7 @@ function clear() {
 //This line disallows clicking while the win sound is playing.
 disableClick() ;
 //This line plays the win sounds.
-audio('./media.winGame.mp3');
+audio('./media/winGame.mp3');
 //This line calls our main animation loop.
 animateLineDrawing();
 // This line waits 1 second.  Then, clears canvas, resets game, and allows clicking again.
