@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrow Function</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>The arrow Function</h1>
+
+        
+        <p id="noArrow"></p>
+
+        <script>
+            var hello;
+            
+            hello = function() {
+              return "No Arrow Function";
+            }
+            
+            document.getElementById("noArrow").innerHTML = hello();
+            </script>
+
+    <p>This one is with the arrow functin</p>
+    <p id="withArrow"></p>
+
+        <script>
+        var Arrow;
+
+        Arrow = () => {
+        return "Arrow shortcut";
+        }
+
+        document.getElementById("withArrow").innerHTML = Arrow();
+    </script>  
+
+
+
+
+
+    </body>
+</html>
