@@ -26,7 +26,7 @@ function Input_Digit(digit) {
 }
 
 // this section handles decimal points
-function input_Decimal(dot) {
+function Input_Decimal(dot) {
     // this ensures that accidental clicking of the decimal point
     // doesn't cause bugs in your operation
     if (Calculator.Wait_Second_Operand === true) return;
