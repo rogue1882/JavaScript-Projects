@@ -1,0 +1,45 @@
+/* Page assignment of style settings*/
+html {
+    font-family: "Avenir Next", Helventica, sans-serif;
+    text-align: center;
+}
+
+/*Body style settings*/
+body {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/*input box style settings*/
+input {
+    padding-top: 30px;
+    width: 500px;
+    height: 60px;
+    font-size: 40px;
+    border: 0;
+}
+
+    input:focus {
+        outline: none;
+    }
+
+li {
+    text-align: left;
+    font-size: 40px;
+    list-style: none;
+    margin: 0;
+} 
+
+ul {
+    text-align: center;
+}
+
+footer {
+    border: 2px solid black;
+    margin-bottom: 0;
+
+}
+
+.remove {
+    padding-bottom: 5px;
+}
